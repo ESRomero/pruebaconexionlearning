@@ -1,0 +1,40 @@
+.page-courses{
+  padding-top: $mobileHeight;
+  min-height: 75vh;
+  overflow: auto;
+
+  .list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0.7rem;
+    .listItem {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      text-align: center;
+      min-height: 250px;
+      box-sizing: 1px;
+      border-radius: 5px;
+      margin: 0.7rem;
+      padding: 0.5rem;
+      box-shadow: 0px 0px 8px $pageGrey;
+      min-height: 3rem;
+      justify-content: space-between;
+      h1{
+        font-size: 0.8em;
+      }
+      h2{
+        font-size: 0.8rem;
+      }
+      p{
+        font-size: 0.7rem;
+      }
+      .button-3{
+        padding: 0.2rem !important;
+        font-size: 1rem !important;
+      }
+    }
+  }
+  
+}

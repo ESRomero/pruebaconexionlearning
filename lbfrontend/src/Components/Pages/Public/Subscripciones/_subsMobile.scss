@@ -1,0 +1,26 @@
+.page-subs{
+    margin-top: $mobileHeight;
+    min-height: 100vh;
+    background-color: $pageWhiteDark;
+    .subs-cards{
+        padding: 1em;
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 100vw;
+            margin: 50px 0px;
+            background-color: $pageWhite;
+            border-radius: 5px;
+            box-shadow: 0px 0px 8px $pageGrey;
+            .prices{
+                span{
+                    text-decoration: line-through;
+                }
+                .discount{
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}

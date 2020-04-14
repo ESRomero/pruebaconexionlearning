@@ -1,0 +1,13 @@
+.marker{
+    width: 20vw;
+    margin: 1rem;
+}
+
+.marker--Not-Complete{
+    background-color: gray;
+    color: darkgrey;
+}
+.marker--Is-Complete{
+    background-color: #1bb04c;
+    color: white;
+}

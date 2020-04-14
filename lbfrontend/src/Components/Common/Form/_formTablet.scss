@@ -1,0 +1,12 @@
+.single{
+    margin-top: 2em;
+    background-color: $pageWhite;
+    box-shadow: 0px 0px 8px $pageGrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 80vw;
+    input,select{
+        padding: 0.8em !important;
+    }
+}

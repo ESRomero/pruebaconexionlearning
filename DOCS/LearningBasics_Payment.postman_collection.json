@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "da1d993f-9c74-4f57-9635-406cf4e6d766",
+		"name": "LearningBasics_Payment",
+		"description": "METODOS GET, POST Y PUT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/admin/payment/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/admin/payment/all",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"payment",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/admin/payment/new",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "test2",
+							"type": "text"
+						},
+						{
+							"key": "dsc",
+							"value": "test2",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "test2",
+							"type": "text"
+						},
+						{
+							"key": "lib",
+							"value": "test2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/admin/payment/new",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"payment",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/admin/payment/update/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "test2",
+							"type": "text"
+						},
+						{
+							"key": "dsc",
+							"value": "test2",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "test2",
+							"type": "text"
+						},
+						{
+							"key": "lib",
+							"value": "test2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/admin/payment/update/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin",
+						"payment",
+						"update",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "5e5f4e61b01ccf2accbdf587"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,19 @@
+.page-subs{
+    margin-top: $desktopHeight;
+    height: 79.2vh;
+    background-color: $pageWhiteDark;
+    .subs-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+        .card{
+            height: 38vw;
+            
+            width: 20vw;
+            background-color: $pageWhite;
+            border-radius: 5px;
+            box-shadow: 0px 0px 8px $pageGrey;
+        }
+    }
+}

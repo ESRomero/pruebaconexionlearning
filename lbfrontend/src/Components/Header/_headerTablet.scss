@@ -1,0 +1,29 @@
+header{
+min-height: $tabletHeight;
+    .nav-links{
+        opacity: 0.2;
+    position: absolute;
+    clip-path: circle(100%);
+    transform: translateX(350px);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: $pageWhite;
+    transition: 1s all ease-in-out;   
+    }//Nav-Links
+    .nav-links.open{
+        opacity: 1;
+        transition: 1s all ease-in-out;
+        clip-path: circle(100%);
+        transform: translateX(0px);
+    }
+    .menu-links{
+        margin-top: 7vw !important;
+       
+    }
+    
+    .burger{
+    }
+transition: all 1s ease-in-out;
+}//Header

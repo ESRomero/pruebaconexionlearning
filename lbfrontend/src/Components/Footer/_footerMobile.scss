@@ -1,0 +1,17 @@
+footer{
+    background-color: $pageColorMain;
+    height: calc(7vh + 15vw);
+    box-shadow: 0px 0px 3px $pageDark;
+    .rights{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        top: 25px;
+        span{
+            color: $pageWhite;
+            text-align: center;
+        }
+    }
+}

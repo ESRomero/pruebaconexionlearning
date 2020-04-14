@@ -1,0 +1,71 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.mail {
+  background-color: #d80000;
+  padding: 1em;
+}
+
+.action-title {
+  background-color: #7a0202;
+  padding: 0.5em;
+  margin: 1em 0px;
+  border-radius: 9px;
+}
+
+.action-title h1 {
+  text-align: center;
+  opacity: 1;
+  color: #fff;
+  font-size: 2em !important;
+}
+
+.content {
+  border-radius: 9px;
+  text-align: center;
+  margin: 0em;
+  background-color: #7a0202;
+  padding: 1em;
+  color: #fff;
+}
+
+.content h2 {
+  background-color: transparent;
+  font-size: 2em;
+}
+
+.content .messages {
+  padding: 1.5em;
+  border-radius: 9px;
+  background-color: #d80000;
+}
+
+.content .messages li {
+  list-style: none;
+  text-align: center;
+  font-size: 1em;
+}
+
+.thanks {
+  text-align: center;
+  color: #fff;
+  font-size: 1.2em;
+  list-style: none;
+}
+
+@media (min-width: 1024px) {
+  .mail {
+    padding: 10em;
+  }
+  .content {
+    padding: 3em;
+  }
+  .content .messages {
+    padding: 2em;
+    border-radius: 9px;
+    font-size: 1.5em;
+    background-color: #d80000;
+  }
+}
+/*# sourceMappingURL=mail.css.map */

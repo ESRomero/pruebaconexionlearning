@@ -1,0 +1,28 @@
+.page-landing-course{
+    margin-top: $desktopHeight;
+    padding: 3rem;
+    .course-icon{
+        
+        font-size: 10em;
+        height: 80vh;
+        span{
+            position: absolute;
+            top: 28%;
+        }
+    }
+    .course-info{
+        border-radius: 5px;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        box-shadow: 0px 0px 8px $pageGrey;
+        padding: 3em;
+        h1{
+            font-size: 1.5rem;
+        }
+        h2,h3,p{
+            font-size: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+/*Mobile Screen*/
+@import "Sass/Grid/grid";
+@import "Sass/General&Colors/general";
+
+@import "Components/Header/headerMobile";
+@import "Components/Footer/footerMobile";
+@import "Components/Pages/Public/Courses/coursesMobile";
+
+@import "Components/Pages/Public/Home/homeMobile";
+@import "Components/Pages/Public/Found/foundMobile";
+@import "Components/Pages/Public/Login/loginMobile";
+@import "Components/Pages/Private/Admin/Access/accessMobile";
+@import "Components/Pages/Private/Admin/Access/singleMobile";
+@import "Components/Common/Form/formMobile";
+@import "Components/Pages/Public/Subscripciones/subsMobile";
+@import "Components/Pages/Public/Register/registerMobile";
+@import "Components/Pages//Public/Approved/approvedMobile";
+@import "Components/Pages/Public/LandingCourses/landingCourseMobile";
+
+
+/*Tablet Screen*/
+@media (min-width: 415px) {
+  @import "Sass/Grid/gridTablet";
+
+  @import "Components/Header/headerTablet";
+  @import "Components/Footer/footerTablet";
+
+  @import "Components/Pages/Public/Courses/coursesTablet";
+  @import "Components/Pages/Public/Home/homeTablet";
+  @import "Components/Pages/Public/Login/loginTablet";
+  @import "Components/Pages/Public/Found/foundTablet";
+  @import "Components/Pages/Private/Admin/Access/accessTablet";
+  @import "Components/Pages/Private/Admin/Access/singleTablet";
+  @import "Components/Common/Form/formTablet";
+  @import "Components/Pages/Public/Subscripciones/subsTablet";
+  @import "Components/Pages/Public/Register/registerTablet";
+  @import "Components/Pages//Public/Approved/approvedTablet";
+  @import "Components/Pages/Public/LandingCourses/landingCourseTablet";
+
+}
+/*Desktop Screens*/
+@media (min-width: 1024px) {
+  @import "Sass/Grid/gridDesktop";
+  @import "Components/Header/headerDesktop";
+  @import "Components/Pages/Public/Courses/coursesDesktop";
+  @import "Components/Pages/Public/Home/homeDesktop";
+  @import "Components/Pages/Public/Login/loginDesktop";
+  @import "Components/Pages/Public/Found/foundDesktop";
+  @import "Components/Pages/Private/Admin/Access/accessDesktop";
+  @import "Components/Pages/Private/Admin/Access/singleDesktop";
+  @import "Components/Common/Form/formDesktop";
+  @import "Components/Pages/Public/Subscripciones/subsDesktop";
+  @import "Components/Pages/Public/Register/registerDesktop";
+  @import "Components/Pages//Public/Approved/approvedDesktop";
+  @import "Components/Pages/Public/LandingCourses/landingCourseDesktop";
+}
+/*tv Screens*/
+@media (min-width: 1300px) {
+  @import "Sass/Grid/gridBigScreens";
+  @import "Components/Pages/Public/Subscripciones/subsBigScreen";
+}

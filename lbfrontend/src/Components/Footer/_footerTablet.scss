@@ -1,0 +1,12 @@
+footer{
+    background-color: $pageColorMain;
+    min-height: 90px;
+    height: calc(6vh + 2vw);
+    box-shadow: 0px 0px 3px $pageGrey;
+    .rights{
+        top: 25px;
+        span{
+          
+        }
+    }
+}

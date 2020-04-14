@@ -1,0 +1,50 @@
+.page-landing{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: $tabletHeight;
+    .landing-photo{
+        background-image: url("Components/Pages/Public/Home/landing-photo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vw;
+        h2{
+            font-size: 2em;
+            top: 10vw;
+            display: block;
+        }
+        button{
+            top: 30vw;
+        }
+    }
+    h2{
+        display: none;
+    }
+    .courses{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-right: 5px solid $pageColorMain;
+        box-shadow: 10px 0 5px -2px $pageDark;
+        h2{
+            display: block;
+        }
+        .info{
+            height: 33.33%;
+            width: 100%;
+            background-color: $pageWhite;
+            color:  $pageColorMain;
+            text-align: center;
+            padding: 3em;
+            &:hover{
+                background-color: $pageColorMain;
+                color:  $pageWhite;
+        }
+            span{
+                font-size: 4em;
+            }
+
+        }
+    }
+}

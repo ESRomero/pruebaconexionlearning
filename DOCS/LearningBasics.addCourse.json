@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "37b12dc9-c962-4be7-8ebe-820c87dcbd06",
+		"name": "LearningBasics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/user/courses/add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userID",
+							"value": "5e617b079c525b25649e2885",
+							"type": "text"
+						},
+						{
+							"key": "courseID",
+							"value": "5e5ede641433485668520e06",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/user/courses/add",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"courses",
+						"add"
+					]
+				},
+				"description": "Login que devuelve el Json"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

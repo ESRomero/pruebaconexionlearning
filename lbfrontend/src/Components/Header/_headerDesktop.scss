@@ -1,0 +1,54 @@
+header{
+    min-height: $desktopHeight;
+    display: flex;
+    flex-direction: row;
+        .nav-links{
+        overflow: auto;
+        position: absolute;
+        top: 0px;
+        right: 50px;
+
+        clip-path: circle(150%);
+        transform: none;
+        max-height: 9vh;
+        display: flex;
+        flex-direction: row;
+
+        
+        background-color: $pageWhite;
+        li{
+            position: static;  
+            width: 100%;
+            display: block;
+            a{
+                padding: 1em;
+                color: $pageColorMain;
+                font-size: 1em;
+                &:hover{
+                    background-color: $pageColorMain;
+                    color: $pageWhite;
+                    transition: 0.2s all ease-in-out;
+                }
+            }
+        } 
+        transition: 1s all ease-in-out;   
+        }//Nav-Links
+        .nav-links.open{
+            transition: 1s all ease-in-out;
+            clip-path: circle(150%);
+            transform: none;
+        }
+        .menu-links{
+            margin-top: 6.5vh !important;
+        }
+        .close{
+            display: none;
+        }
+        .burger{
+            display: none;
+        }
+        .user-menu{
+            padding: 1em;
+        }
+    transition: all 1s ease-in-out;
+    }//Header

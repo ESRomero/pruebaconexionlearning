@@ -1,0 +1,36 @@
+.page-landing{
+    margin-top: $desktopHeight;
+    .landing-photo{
+        height: 95vh;
+    }
+    h2{
+        border-bottom: 3px solid $pageColorMain;
+        padding: 0.5em;
+        text-align: center;
+        color: $pageColorMain;
+    }
+    .courses{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-right: none;
+        box-shadow: none;
+        .info{
+            height: 33.33%;
+            width: 100%;
+            background-color: $pageWhite;
+            color:  $pageColorMain;
+            text-align: center;
+            padding: 3em;
+            &:hover{
+                background-color: $pageColorMain;
+                color:  $pageWhite;
+        }
+            span{
+                font-size: 4em;
+            }
+
+        }
+    }
+}

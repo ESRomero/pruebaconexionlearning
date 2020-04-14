@@ -1,0 +1,134 @@
+@import "colors";
+/*----------------------------------
+MIXINS
+------------------------------------*/
+@mixin buttonHover($color1, $color2) {
+  background-color: $color1;
+  color: $color2;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    background-color: $color2;
+    box-shadow: 0px 0px 10px $pageGrey;
+    color: $color1;
+    transition: all 0.5s ease-in-out;
+  }
+}
+/*----------------------------------
+GENERAL
+------------------------------------*/
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+main {
+  min-height: auto;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.line {
+  background-color: $pageColorMain;
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+}
+.line-pink {
+  background-color: $pageColor1;
+  height: 6px;
+  margin-bottom: 2em;
+}
+.button-3 {
+  border: none;
+  border-radius: 5px;
+  padding: 1.2em !important;
+  @include buttonHover($pageColorMain, $pageWhite);
+}
+.button-4 {
+  border: none;
+  border-radius: 5px;
+  padding: 1.2em !important;
+  color: #fff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.input-1 {
+  border-radius: 5px;
+  padding: 0.8em !important;
+  border: 1.5px solid $pageColorMain;
+}
+.action-title {
+  background-color: $pageWhite;
+  opacity: 0.9;
+  margin: 15px;
+  padding: 2em;
+  border-radius: 0px;
+  box-shadow: 0px 0px 8px $pageGrey;
+  h1 {
+    color: $pageColorMain;
+    opacity: 1;
+    font-size: 2em !important;
+  }
+  button {
+    text-align: center;
+    display: block;
+    a {
+      display: block;
+      color: $pageWhite;
+    }
+    &:hover {
+      a {
+        color: $pageColorMain;
+      }
+    }
+  }
+}
+.correct {
+  border-bottom: 8px solid $green !important;
+}
+.error {
+  border-bottom: 8px solid $orange !important;
+  transition: all 1s ease-in-out;
+}
+.main-color {
+  color: $pageColorMain;
+}
+.blue {
+  color: $blue;
+}
+.green {
+  color: $green;
+}
+.orange {
+  color: $orange;
+}
+.yellow {
+  color: $yellow;
+}
+.white {
+  color: $pageWhite;
+}
+.hidden {
+  display: none;
+}
+.black {
+  color: $pageDark;
+}
+/*----------------------------------
+Nav height
+------------------------------------*/
+$mobileHeight: 18vw;
+$tabletHeight: 9vw;
+$desktopHeight: 9vh;

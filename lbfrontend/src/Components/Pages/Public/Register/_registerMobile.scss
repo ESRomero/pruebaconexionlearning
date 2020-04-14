@@ -1,0 +1,24 @@
+.page-register{
+    overflow: hidden;
+    margin-top: $mobileHeight;
+    background-color: $pageWhiteDark;
+    padding-bottom: 1em;
+    .form, .total{
+        margin: 1.8em;
+        background-color: $pageWhite;
+        border-radius: 5px;
+        box-shadow: 0px 0px 8px $pageGrey;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        button,a{
+            padding: 0.8em !important;
+            font-size: 1em;
+        }
+    }
+    h3{
+        font-size: 2em;
+    }
+}

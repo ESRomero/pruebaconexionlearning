@@ -1,0 +1,28 @@
+.page-landing-course{
+    margin-top: $tabletHeight;
+    flex-direction: row;
+    padding: 3rem;
+    .course-icon{
+        position: relative;
+        text-align: center;
+        border-radius: 5px;
+        color: $pageWhite;
+        font-size: 5em;
+        min-height: 60vh;
+        span{
+            position: absolute;
+            top: 35%;
+            right: 32%;
+        }
+    }
+    .course-info{
+        border-radius: 5px;
+        min-height: 60vh;
+        h1{
+            font-size: 1.2rem;
+        }
+        h2,h3{
+            font-size: 1rem;
+        }
+    }
+}

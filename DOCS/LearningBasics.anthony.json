@@ -1,0 +1,371 @@
+{
+	"info": {
+		"_postman_id": "3eeec4b4-565e-4ba6-8430-7e8e3958ff00",
+		"name": "LearningBasics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "courses",
+					"item": [
+						{
+							"name": "http://localhost:3000/api/admin/courses/all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/admin/courses/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"courses",
+										"all"
+									]
+								},
+								"description": "Devuelve todos los cursos"
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:3000/api/admin/courses/new",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "CursoTest",
+											"type": "text"
+										},
+										{
+											"key": "desc",
+											"value": "Curso para probar que funcione",
+											"type": "text"
+										},
+										{
+											"key": "hours",
+											"value": "20",
+											"type": "text"
+										},
+										{
+											"key": "req",
+											"value": "IQ mayor a 250",
+											"type": "text"
+										},
+										{
+											"key": "active",
+											"value": "False",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/admin/courses/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"courses",
+										"new"
+									]
+								},
+								"description": "Crea un nuevo curso"
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:3000/api/admin/courses/update/:id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Something",
+											"type": "text"
+										},
+										{
+											"key": "desc",
+											"value": "Anything",
+											"type": "text"
+										},
+										{
+											"key": "hours",
+											"value": "15",
+											"type": "text"
+										},
+										{
+											"key": "active",
+											"value": "False",
+											"type": "text"
+										},
+										{
+											"key": "req",
+											"value": "10 years of experience at NASA",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/admin/courses/update/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"courses",
+										"update",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e5f4dd1a34f6d3ae04e6023"
+										}
+									]
+								},
+								"description": "Modifica retornando el documento viejo sin actualizar"
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:3000/api/admin/courses/nodes/all/:id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/admin/courses/nodes/all/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"courses",
+										"nodes",
+										"all",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e62f594f0e9e436dca509f4"
+										}
+									]
+								},
+								"description": "Muestra todos los nodos de determinado course por el ID"
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:3000/api/admin/courses/node/new/:id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "number",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Whatever5",
+											"type": "text"
+										},
+										{
+											"key": "desc",
+											"value": "Wahtever will suffice5",
+											"type": "text"
+										},
+										{
+											"key": "dialogo",
+											"value": "Que cualquier cosa ombe, no quiero escribir5",
+											"type": "text"
+										},
+										{
+											"key": "tipo",
+											"value": "Video",
+											"type": "text"
+										},
+										{
+											"key": "respuesta",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "completado",
+											"value": "false",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/admin/courses/node/new/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"courses",
+										"node",
+										"new",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e62f594f0e9e436dca509f4"
+										}
+									]
+								},
+								"description": "Inserta un nuevo nodo en el curso que tenga el ID del URL"
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:3000/api/admin/courses/node/upd/:idc/:idn",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Test",
+											"type": "text"
+										},
+										{
+											"key": "number",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "desc",
+											"value": "This is only for testing (bear with it)",
+											"type": "text"
+										},
+										{
+											"key": "dialogo",
+											"value": "The test was apparently successful (or not)",
+											"type": "text"
+										},
+										{
+											"key": "tipo",
+											"value": "Drag",
+											"type": "text"
+										},
+										{
+											"key": "respuesta",
+											"value": "drag626",
+											"type": "text"
+										},
+										{
+											"key": "completado",
+											"value": "true",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/admin/courses/node/upd/:idc/:idn",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"courses",
+										"node",
+										"upd",
+										":idc",
+										":idn"
+									],
+									"variable": [
+										{
+											"key": "idc",
+											"value": "5e62f594f0e9e436dca509f4"
+										},
+										{
+											"key": "idn",
+											"value": "5"
+										}
+									]
+								},
+								"description": "Permite modificar los campos de name, desc, dialogo, tipo, respuesta y completado de determinado nodo en determinado curso"
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

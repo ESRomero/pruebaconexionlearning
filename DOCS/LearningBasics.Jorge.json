@@ -1,0 +1,247 @@
+{
+	"info": {
+		"_postman_id": "752a3cca-d247-45b0-883d-d151efab9b54",
+		"name": "LearningBasics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/user/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usernames",
+							"value": "Anthony Rodriguez",
+							"type": "text"
+						},
+						{
+							"key": "userage",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "usergender",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "useremail",
+							"value": "arodriguez@unicah.edu",
+							"type": "text"
+						},
+						{
+							"key": "userpassword",
+							"value": "Nintendo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/user/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"register"
+					]
+				},
+				"description": "Registro de Usuario\n"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/user/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/user/all",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"all"
+					]
+				},
+				"description": "Ver todos los usuarios"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/user/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/user/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "5e617b079c525b25649e2885"
+						}
+					]
+				},
+				"description": "Filtrado por su Id"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/user/upd/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usernames",
+							"value": "Georgia Ramirez",
+							"type": "text"
+						},
+						{
+							"key": "userage",
+							"value": "23",
+							"type": "text"
+						},
+						{
+							"key": "usergender",
+							"value": "Female",
+							"type": "text"
+						},
+						{
+							"key": "userpassword",
+							"value": "Mujer",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/user/upd/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"upd",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "5e617b079c525b25649e2885"
+						}
+					]
+				},
+				"description": "Modifica un Usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/user/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userEmail",
+							"value": "jesalgado@unicah.edu",
+							"type": "text"
+						},
+						{
+							"key": "userPassword",
+							"value": "Mujer",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				},
+				"description": "Login que devuelve el Json"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/user/mycourses/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/user/mycourses/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"mycourses",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "5e617b079c525b25649e2885"
+						}
+					]
+				},
+				"description": "Mostrar los cursos de el propio usuario"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

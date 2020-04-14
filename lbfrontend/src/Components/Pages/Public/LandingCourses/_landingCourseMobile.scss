@@ -1,0 +1,35 @@
+.page-landing-course{
+    margin-top: $mobileHeight;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: $pageWhiteDark;
+    padding: 1rem;
+    .course-icon{
+        padding: 0em !important;
+        text-align: center;
+        border-radius: 5px;
+        background-color: $pageColorMain;
+        color: $pageWhite;
+        font-size: 10em;
+        box-shadow: 0px 0px 8px $pageGrey;
+    }
+    .course-info{
+        border-radius: 5px;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: $pageWhite;
+        box-shadow: 0px 0px 8px $pageGrey;
+        
+        h1{
+            font-size: 1.2rem;
+        }
+        h2,h3{
+            font-size: 1rem;
+        }
+    }
+}
